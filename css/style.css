@@ -93,7 +93,9 @@ i {
  
  .banner h2{
     font-size: 4rem;
+    padding: 1.6rem  ;
     margin-bottom: 1.2rem;
+    
     /* position relative é relativo a caixa. */
     position: relative;
     /* o z-index define o eixo "z" de profundidade 3d na frente ou atrás */
@@ -117,6 +119,7 @@ i {
     top: 40px;
     z-index:1;
 }
+
 
 .dots{
     display:flex;
@@ -716,6 +719,41 @@ span .square{
     #contact-information .btn{
         align-self: auto;
     }
+
+    /* rodape - footer */
+    #footer{
+       flex-wrap: wrap;
+    }
+    .contact-info,
+    .links-container{
+      width: 100%;
+    }
+    #footer i{
+      font-size: 2rem;
+      padding: 1rem;
+    }  
+    .footer-brand{
+        text-align: center;
+    }
+    #networks{
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+    .links-container{
+        margin-top: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .links-container h4{
+        margin-bottom: 1.5rem;
+    }
+    .links-container .phone-info{
+        margin-bottom: 1.5rem;
+    }
+      
+   
+
+ 
+          
 
 
 }
