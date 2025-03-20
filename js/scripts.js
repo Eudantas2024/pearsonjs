@@ -1,11 +1,23 @@
+// selecionando elementos do menu Mobile 
+const menuBtn = document.querySelector("#menu");
+const closemenuBtn = document.querySelector("#close-menu");
+const menu = document.querySelector("#mobile-navbar");
+const header = document.querySelector("#mobile-navbar [href='#header']");
+const expertiseareas = document.querySelector("#mobile-navbar [href='#expertise-areas']");
+const about = document.querySelector("#mobile-navbar [href='#about']");
+const team = document.querySelector("#mobile-navbar [href='#team']");
+const contact = document.querySelector("#mobile-navbar [href='#contact']");
+
+
 // selecionar os elementos dos slides
 const slides = document.querySelectorAll(".banner");
 // console.log(slides);
 const dots = document.querySelectorAll(".dot");
 // variavel de lógica de controle pessoal
-let slideIndex = 0;
+let slideIndex = 1;
 
 function showSlides(){
+    console.log(slides)
     for(let i = 0; i < slides.length; i++){
         slides[i].classList.remove("active")
         dots[i].classList.remove("active")
@@ -23,7 +35,44 @@ function showSlides(){
 
 }
 
-// Inicialização (chamar a função)
+
+// Ativar menu mobile
+// arrow function
+// () => {
+//     }
+menuBtn.addEventListener("click", (e) =>{
+    menu.classList.add("menu-active")
+
+});
+closemenuBtn.addEventListener("click", (e) =>{
+    menu.classList.remove("menu-active")
+
+});
+
+header.addEventListener("click", (e) =>{
+    menu.classList.remove("menu-active")
+
+});
+expertiseareas.addEventListener("click", (e) =>{
+    menu.classList.remove("menu-active")
+
+});
+
+about.addEventListener("click", (e) =>{
+    menu.classList.remove("menu-active")
+
+});
+team.addEventListener("click", (e) =>{
+    menu.classList.remove("menu-active")
+
+});
+contact.addEventListener("click", (e) =>{
+    menu.classList.remove("menu-active")
+
+});
+
+
+// Inicialização do slides (chamar a função)
 showSlides()
 
 
