@@ -40,6 +40,13 @@ function showSlides(){
 // arrow function
 // () => {
 //     }
+
+// [menuBtn, closeMenuBtn].forEach( (btn) => {
+//     btn.addEventListener("click", (e) =>{
+//         menu.classList.toggle("menu-active")
+//     })
+// })
+
 menuBtn.addEventListener("click", (e) =>{
     menu.classList.add("menu-active")
 
