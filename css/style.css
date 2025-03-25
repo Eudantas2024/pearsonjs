@@ -106,7 +106,7 @@ i {
     font-size: 1.5rem;
  }
  /* fazer o design do quadrado logo abaixo do titulo principal Pearson Hardman */
-.banner.active .square{
+ .square{
     display: block;
     width: 150px;
     height: 150px;
@@ -325,39 +325,43 @@ border-top: 1px solid var(--secondary-text-color);
     margin-bottom: 1rem;
 }
 
-.author .author-job{
+.author .author-job {
     color: var(--secondary-text-color);
 }
 
 /* Colaboradores */
-#team{
+#team {
+    position: relative;  /* posição relativa a um outro item */
+    margin-bottom: 2rem;
    text-align: center;   
-   padding-bottom: 3rem;
-   
-
-   
+   padding-bottom: 3rem;   
 }
 
-#team h2{
+#team h2 {
     justify-content: center;
     width: 900px;
-    margin: 0 auto;
     align-items: center;
     padding: 2rem;
     font-size: 3rem;
-    
-}
-
-span{
-    color: var(--main-color);   
-    align-items: center;
-}
-
-span .square{
-    justify-content: center;
+    text-align: center;
+    max-width: 1000px;  
     margin: 0 auto;
-    align-items: center;
+    position: relative;
+    z-index: 2; /* posição em camada na tela, no caso camada 2 */
     
+}
+
+#team h2 span {
+    color: var(--main-color);
+}
+
+#team .square {
+    background-color: var(--tertiary-color);
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: -25px;
 }
 
 .employees{
