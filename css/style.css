@@ -34,7 +34,7 @@ i {
 
 /* id */
 #header{
-    /* tamanho 90% do espaço */
+    /* tamanho 90% do espaço no index */
     min-height: 90vh;
     background-image: url("../images/main_banner4.png");
     background-size: cover;
@@ -45,7 +45,7 @@ i {
 
 }
 #header-paginas{
-    /* tamanho 90% do espaço */
+    /* tamanho nas outras páginas fora do index*/
     min-height: 15vh;
     background-image: url("../images/main_banner4.png");
     background-size: cover;
@@ -70,8 +70,14 @@ i {
  #brand{
     background-color: var(--main-color);
     padding: 1rem;
+    color: var(--primary-text-color) ;
  }
 
+ /* adicionei um hyperlink no brand 'Pearson Hardman' para voltar para o index em todas as outras páginas */
+ #brand .link-branco{
+    color: white;
+    text-decoration: none;
+ }
  #navbar{
     display: flex;
     /* espaçamento do display flex */
