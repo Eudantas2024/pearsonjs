@@ -41,9 +41,21 @@ i {
     background-position: center;
     color: var(--primary-text-color);
     /* REM e  EM  são 16pixel, o em sozinho = tamanho da fonte tag pai,  rem é r de root, ref a tag body */
-    margin-bottom: 2rem;   
+    margin-bottom: 0;   
 
 }
+#header-paginas{
+    /* tamanho 90% do espaço */
+    min-height: 15vh;
+    background-image: url("../images/main_banner4.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    /* REM e  EM  são 16pixel, o em sozinho = tamanho da fonte tag pai,  rem é r de root, ref a tag body */
+    margin-bottom: 3rem;   
+
+}
+
 
  
  #inner-header{

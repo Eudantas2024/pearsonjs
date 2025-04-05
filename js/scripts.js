@@ -2,11 +2,11 @@
 const menuBtn = document.querySelector("#menu");
 const closemenuBtn = document.querySelector("#close-menu");
 const menu = document.querySelector("#mobile-navbar");
-const header = document.querySelector("#mobile-navbar [href='#header']");
-const expertiseareas = document.querySelector("#mobile-navbar [href='#expertise-areas']");
-const about = document.querySelector("#mobile-navbar [href='#about']");
-const team = document.querySelector("#mobile-navbar [href='#team']");
-const contact = document.querySelector("#mobile-navbar [href='#contact']");
+const header = document.querySelector("#mobile-navbar [href='index.html']");
+const expertiseareas = document.querySelector("#mobile-navbar [href='servicos.html']");
+const about = document.querySelector("#mobile-navbar [href='sobre.html']");
+const team = document.querySelector("#mobile-navbar [href='time.html']");
+const contact = document.querySelector("#mobile-navbar [href='contato.html']");
 
 
 // selecionar os elementos dos slides
